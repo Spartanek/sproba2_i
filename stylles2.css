@@ -13,7 +13,7 @@ header {
 }
 header::after {
   margin-top: 25px;
-  content: '';
+  content: "";
   width: 100%;
   height: 1px;
   display: block;
@@ -37,7 +37,7 @@ nav > ul {
 }
 .logo-text > p {
   color: #000;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -55,7 +55,7 @@ nav > ul {
 }
 .logo-text > p > span {
   color: #2196f3;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -64,7 +64,7 @@ nav > ul {
 }
 .ul-nav > li > a > p {
   color: #212121;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -81,7 +81,7 @@ nav > ul {
 }
 .extrainf-header-ul > li > a > p {
   color: #757575;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -119,7 +119,7 @@ nav > ul {
 .button-ul > li > button > p {
   color: #212121;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -156,7 +156,7 @@ nav > ul {
 }
 .shopping-div > h3 {
   color: #212121;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -166,7 +166,7 @@ nav > ul {
 }
 .shopping-div > p {
   color: #757575;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +182,7 @@ footer {
 }
 .telemail-footer-ul > li > a > p {
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -194,7 +194,7 @@ footer {
 }
 address {
   color: #fff;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +204,7 @@ address {
 }
 .logo-footer > p {
   color: #fff;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -213,7 +213,7 @@ address {
 }
 .logo-footer > p > span {
   color: #2196f3;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -225,7 +225,7 @@ address {
 }
 .box2 > p {
   color: #fff;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -251,7 +251,14 @@ address {
   border-radius: 50%;
   height: 44px;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .div-svg:hover {
   background: rgba(33, 150, 243, 1);
+}
+.footer-svgshka {
+  font-size: 20px;
+  color: white;
 }
