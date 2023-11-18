@@ -508,6 +508,62 @@ address {
   height: 581px;
   background-color: white;
 }
+
 .no-scroll {
   overflow: hidden;
+}
+.modal-container {
+  margin: 0 auto;
+  width: 528px;
+  padding: 0px 40px;
+}
+.button-hero-close {
+  /* трохи призвабув як краще тут записати замість margin */
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.button-hero-close:hover {
+  fill: #2196f3;
+}
+.modal-close-divFlex {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-form {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+.form-modal > label {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.form-modal > label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-modal > input {
+  display: block;
+  margin-bottom: 10px;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }

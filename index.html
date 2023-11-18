@@ -349,7 +349,35 @@
     <!-- modalka -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-hero-close" data-modal-close></button>
+        <div class="modal-close-divFlex">
+          <svg class="button-hero-close" data-modal-close>
+            <use href="./modal-symbol-defs.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="modal-container">
+          <h2 class="header-form">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="form-modal" action="">
+            <label for="textik">Ім'я</label>
+            <input type="text" name="textik" />
+            <label for="telef">Телефон</label>
+            <input type="tel" name="telef" />
+            <label for="mylo">Пошта</label>
+            <input type="email" name="mylo" />
+            <label for="comment">Коментар</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              name="comment"
+            ></textarea>
+            <input type="checkbox" name="check" /><label
+              >Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a></label
+            >
+            <button type="submit"></button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- script -->
