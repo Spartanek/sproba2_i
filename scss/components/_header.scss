@@ -1,0 +1,80 @@
+header {
+  padding: 24px 0px;
+}
+.container-flex {
+  display: flex;
+  align-items: center;
+}
+.navul-header {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  margin-right: 340px;
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+nav {
+  display: flex;
+}
+.links-header {
+  display: flex;
+}
+.links-header > li {
+  display: flex;
+  align-items: center;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.nav-link > p {
+  color: #212121;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.envelope-svg {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
+.smartphone-svg {
+  width: 10px;
+  height: 16px;
+  fill: rgba(117, 117, 117, 1);
+  margin-right: 10px;
+}
+.telemail-header {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.logo-maintext {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logospan-text {
+  color: #2196f3;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}

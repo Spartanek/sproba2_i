@@ -111,14 +111,23 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+blockquote:after {
+  content: "";
+  content: none;
+  &::before {
+    content: "";
+    content: none;
+  }
+}
+q:before {
+  content: "";
+  content: none;
+  q:after {
+    content: "";
+    content: none;
+  }
 }
