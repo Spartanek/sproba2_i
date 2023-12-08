@@ -357,24 +357,46 @@
         <div class="modal-container">
           <h2 class="header-form">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="form-modal" action="">
-            <label for="textik">Ім'я</label>
-            <input type="text" name="textik" />
-            <label for="telef">Телефон</label>
-            <input type="tel" name="telef" />
-            <label for="mylo">Пошта</label>
-            <input type="email" name="mylo" />
-            <label for="comment">Коментар</label>
+            <label class="text-label" for="textik">Ім'я</label>
+            <input
+              autocomplete="off"
+              type="text"
+              id="textik"
+              pattern="[A-Za-z0-9]{3,}"
+              title="Minimum required name should consist 3 letters"
+              required
+            />
+            <label class="text-label" for="telef">Телефон</label>
+            <!-- в патерні написав ще мінімальну кількість символів, бо не працює -->
+            <input
+              autocomplete="off"
+              type="tel"
+              id="telef"
+              required
+              pattern="[0-9]{3,}"
+              title="You should write only numbers"
+            />
+            <label class="text-label" for="mylo">Пошта</label>
+            <input
+              autocomplete="off"
+              type="email"
+              id="mylo"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <label class="text-label" for="comment">Коментар</label>
             <textarea
+              class="textarea1"
+              autocomplete="off"
               name=""
-              id=""
-              cols="30"
-              rows="10"
-              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+              fixed
             ></textarea>
-            <input type="checkbox" name="check" /><label
-              >Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a></label
-            >
+            <input type="checkbox" id="check" required />
+            <p>
+              Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+            </p>
             <button type="submit"></button>
           </form>
         </div>
