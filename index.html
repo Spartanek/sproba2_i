@@ -344,6 +344,36 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form action="">
+            <p class="heading-secondform">Підпишіться на розсилку</p>
+            <div class="secondform-box">
+              <input
+                class="input-secondform"
+                autocomplete="off"
+                type="email"
+                placeholder="E-Mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+              <button class="submit-secondform" type="submit">
+                <div style="display: flex">
+                  <p class="text-forsecondsubmitbutton">Підписатися</p>
+                  <svg
+                    class="svg-telegram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    ;
+                  >
+                    <path
+                      d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modalka -->
@@ -357,8 +387,14 @@
         <div class="modal-container">
           <h2 class="header-form">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="form-modal" action="">
+            <span style="position: absolute">
+              <svg class="svg-in-modal">
+                <use href="./modal-symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
             <label class="text-label" for="textik">Ім'я</label>
             <input
+              class="modal-Input"
               autocomplete="off"
               type="text"
               id="textik"
@@ -369,6 +405,7 @@
             <label class="text-label" for="telef">Телефон</label>
             <!-- в патерні написав ще мінімальну кількість символів, бо не працює -->
             <input
+              class="modal-Input"
               autocomplete="off"
               type="tel"
               id="telef"
@@ -378,6 +415,7 @@
             />
             <label class="text-label" for="mylo">Пошта</label>
             <input
+              class="modal-Input"
               autocomplete="off"
               type="email"
               id="mylo"
@@ -393,11 +431,19 @@
               placeholder="Введіть текст"
               fixed
             ></textarea>
-            <input type="checkbox" id="check" required />
-            <p>
-              Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-            </p>
-            <button type="submit"></button>
+            <div class="box-checkbox">
+              <input type="checkbox" id="check" required />
+              <p>
+                Погоджуюся з розсилкою та приймаю
+                <a style="color: #2196f3" href="rulesForCustomers"
+                  >Умови договору</a
+                >
+              </p>
+            </div>
+            <!-- не хотів в p текст заходи -->
+            <button class="modalka-submitButton" type="submit">
+              Відправити
+            </button>
           </form>
         </div>
       </div>

@@ -56,6 +56,28 @@ nav {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+.navul-header > li {
+  position: relative;
+}
+.navul-header > li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  border-radius: 2px;
+  background: #2196f3;
+  transform: scale(0);
+  transition-duration: 500ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+.navul-header > li:hover::after {
+  transform: scale(1);
+  background-color: #2196f3;
+}
 .envelope-svg {
   width: 16px;
   height: 12px;
@@ -334,9 +356,15 @@ address {
   line-height: normal;
   letter-spacing: 0.78px;
 }
+/* не можу чогось дати */
+/* .box3 {
+  margin-left: 70px;
+} */
 .box2 {
   margin-left: 70px;
+  margin-right: 70px;
 }
+
 .box2 > p {
   color: #fff;
   font-family: "Roboto";
@@ -582,4 +610,127 @@ address {
   line-height: normal;
   letter-spacing: 0.12px;
   margin-bottom: 4px;
+}
+.modal-Input {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.box-checkbox {
+  display: flex;
+}
+
+/* центруватись за контейнером не захотілось */
+.modalka-submitButton {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+input:target {
+  border: 1px solid #2196f3;
+}
+.textarea1::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.textarea1 {
+  padding: 12px 16px;
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 4px;
+}
+.svg-in-modal {
+  width: 18px;
+  height: 18px;
+}
+.submit-secondform {
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.heading-secondform {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.secondform-box {
+  display: flex;
+}
+.input-secondform {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  height: 50px;
+  /* margin-left: 12px; */
+}
+.input-secondform::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+}
+.text-forsecondsubmitbutton {
+  color: #fff;
+
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+.svg-telegram {
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
 }
