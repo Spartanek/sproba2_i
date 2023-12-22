@@ -71,6 +71,28 @@ nav > ul {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+.ul-nav > li {
+  position: relative;
+}
+.ul-nav > li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  border-radius: 2px;
+  background: #2196f3;
+  transform: scale(0);
+  transition-duration: 500ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+.ul-nav > li:hover::after {
+  transform: scale(1);
+  background-color: #2196f3;
+}
 .extrainf-header-ul {
   display: flex;
   align-items: center;

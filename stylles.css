@@ -59,6 +59,7 @@ nav {
 .navul-header > li {
   position: relative;
 }
+
 .navul-header > li::after {
   position: absolute;
   content: "";
