@@ -151,6 +151,7 @@ nav {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: block;
   margin: 0 auto;
+  border: none;
 }
 .button-hero > p {
   color: #fff;
@@ -602,7 +603,31 @@ address {
   width: 448px;
   height: 120px;
 }
+.spanchick {
+  position: relative;
+}
+.divchick-label {
+  margin-bottom: 5px;
+}
+.divchick-label:not(:first-child) {
+  margin-top: 10px;
+}
+
+.svg-modalka {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  left: 12px;
+}
+.terms {
+  color: #2196f3;
+  text-decoration: underline;
+}
 .text-label {
+  margin-top: 10px;
+}
+.label-textik {
   color: #757575;
   font-family: "Roboto";
   font-size: 12px;
@@ -610,17 +635,19 @@ address {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
-  margin-bottom: 4px;
 }
 .modal-Input {
-  color: rgba(117, 117, 117, 0.5);
-  font-family: "Roboto";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.12px;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
+}
+.modal-Input:focus {
+  outline: 1px solid #2196f3;
+}
+.modal-Input:focus + svg {
+  fill: rgba(33, 150, 243, 1);
 }
 .box-checkbox {
   display: flex;
@@ -644,6 +671,7 @@ address {
   letter-spacing: 0.96px;
   margin: 0 auto;
   margin-top: 40px;
+  border: none;
 }
 input:target {
   border: 1px solid #2196f3;
@@ -667,11 +695,11 @@ input:target {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 4px;
 }
-.svg-in-modal {
-  width: 18px;
-  height: 18px;
+.textarea1:focus {
+  outline: 1px solid #2196f3;
 }
 .submit-secondform {
   border-radius: 4px;
@@ -680,6 +708,8 @@ input:target {
   width: 200px;
   height: 50px;
   display: flex;
+  border: none;
+  outline: none;
   align-items: center;
   justify-content: center;
   margin-left: 12px;
@@ -700,17 +730,24 @@ input:target {
   display: flex;
 }
 .input-secondform {
+  padding-left: 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
   /* margin-left: 12px; */
 }
 .input-secondform::placeholder {
   color: rgba(255, 255, 255, 0.6);
-
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
@@ -718,6 +755,10 @@ input:target {
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
 }
+.input-secondform:focus {
+  outline: 1px solid #2196f3;
+}
+
 .text-forsecondsubmitbutton {
   color: #fff;
 

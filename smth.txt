@@ -1,0 +1,36 @@
+<label class="text-label" for="textik">Ім'я</label>
+            <span style="position: absolute">
+              <svg class="svg-in-modal">
+                <use href="./modal-symbol-defs.svg#icon-person"></use>
+              </svg>
+              <input
+                class="modal-Input"
+                autocomplete="off"
+                type="text"
+                id="textik"
+                pattern="[A-Za-z0-9]{3,}"
+                title="Minimum required name should consist 3 letters"
+                required
+              />
+            </span>
+
+            <label class="text-label" for="telef">Телефон</label>
+            <!-- в патерні написав ще мінімальну кількість символів, бо не працює -->
+            <input
+              class="modal-Input"
+              autocomplete="off"
+              type="tel"
+              id="telef"
+              required
+              pattern="[0-9]{3,}"
+              title="You should write only numbers"
+            />
+            <label class="text-label" for="mylo">Пошта</label>
+            <input
+              class="modal-Input"
+              autocomplete="off"
+              type="email"
+              id="mylo"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />

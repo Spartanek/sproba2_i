@@ -387,41 +387,59 @@
         <div class="modal-container">
           <h2 class="header-form">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="form-modal" action="">
-            <span style="position: absolute">
-              <svg class="svg-in-modal">
+            <div class="divchick-label">
+              <label class="label-textik" for="textik">Ім'я</label>
+            </div>
+            <span class="spanchick">
+              <input
+                class="modal-Input"
+                type="text"
+                autocomplete="off"
+                type="text"
+                id="textik"
+                pattern="[A-Za-z0-9]{3,}"
+                title="Minimum required name should consist 3 letters"
+                required
+              />
+              <svg class="svg-modalka">
                 <use href="./modal-symbol-defs.svg#icon-person"></use>
               </svg>
             </span>
-            <label class="text-label" for="textik">Ім'я</label>
-            <input
-              class="modal-Input"
-              autocomplete="off"
-              type="text"
-              id="textik"
-              pattern="[A-Za-z0-9]{3,}"
-              title="Minimum required name should consist 3 letters"
-              required
-            />
-            <label class="text-label" for="telef">Телефон</label>
-            <!-- в патерні написав ще мінімальну кількість символів, бо не працює -->
-            <input
-              class="modal-Input"
-              autocomplete="off"
-              type="tel"
-              id="telef"
-              required
-              pattern="[0-9]{3,}"
-              title="You should write only numbers"
-            />
-            <label class="text-label" for="mylo">Пошта</label>
-            <input
-              class="modal-Input"
-              autocomplete="off"
-              type="email"
-              id="mylo"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required
-            />
+            <div class="divchick-label">
+              <label class="label-textik" for="textik">Телефон</label>
+            </div>
+            <span class="spanchick">
+              <input
+                class="modal-Input"
+                autocomplete="off"
+                type="tel"
+                id="telef"
+                required
+                pattern="[0-9]{3,}"
+                title="You should write only numbers"
+              />
+              <svg class="svg-modalka">
+                <use href="./modal-symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </span>
+
+            <div class="divchick-label">
+              <label class="label-textik" for="mylo">Пошта</label>
+            </div>
+            <span class="spanchick">
+              <input
+                class="modal-Input"
+                autocomplete="off"
+                type="email"
+                id="mylo"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <svg class="svg-modalka">
+                <use href="./modal-symbol-defs.svg#icon-email"></use>
+              </svg>
+            </span>
+
             <label class="text-label" for="comment">Коментар</label>
             <textarea
               class="textarea1"
@@ -435,9 +453,7 @@
               <input type="checkbox" id="check" required />
               <p>
                 Погоджуюся з розсилкою та приймаю
-                <a style="color: #2196f3" href="rulesForCustomers"
-                  >Умови договору</a
-                >
+                <a class="terms" href="rulesForCustomers">Умови договору</a>
               </p>
             </div>
             <!-- не хотів в p текст заходи -->
