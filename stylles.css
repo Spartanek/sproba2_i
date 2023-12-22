@@ -79,6 +79,9 @@ nav {
   transform: scale(1);
   background-color: #2196f3;
 }
+.navul-header > li:hover > a > p {
+  color: #2196f3;
+}
 .envelope-svg {
   width: 16px;
   height: 12px;
