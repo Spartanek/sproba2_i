@@ -1,10 +1,21 @@
-<label class="text-label" for="textik">Ім'я</label>
-            <span style="position: absolute">
-              <svg class="svg-in-modal">
-                <use href="./modal-symbol-defs.svg#icon-person"></use>
-              </svg>
+          <!-- modalka -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-close-divFlex">
+          <svg class="button-hero-close" data-modal-close>
+            <use href="./modal-symbol-defs.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="modal-container">
+          <h2 class="header-form">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="form-modal" action="">
+            <div class="divchick-label">
+              <label class="label-textik" for="textik">Ім'я</label>
+            </div>
+            <span class="spanchick">
               <input
                 class="modal-Input"
+                type="text"
                 autocomplete="off"
                 type="text"
                 id="textik"
@@ -12,25 +23,66 @@
                 title="Minimum required name should consist 3 letters"
                 required
               />
+              <svg class="svg-modalka">
+                <use href="./modal-symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
+            <div class="divchick-label">
+              <label class="label-textik" for="textik">Телефон</label>
+            </div>
+            <span class="spanchick">
+              <input
+                class="modal-Input"
+                autocomplete="off"
+                type="tel"
+                id="telef"
+                required
+                pattern="[0-9]{3,}"
+                title="You should write only numbers"
+              />
+              <svg class="svg-modalka">
+                <use href="./modal-symbol-defs.svg#icon-phone"></use>
+              </svg>
             </span>
 
-            <label class="text-label" for="telef">Телефон</label>
-            <!-- в патерні написав ще мінімальну кількість символів, бо не працює -->
-            <input
-              class="modal-Input"
+            <div class="divchick-label">
+              <label class="label-textik" for="mylo">Пошта</label>
+            </div>
+            <span class="spanchick">
+              <input
+                class="modal-Input"
+                autocomplete="off"
+                type="email"
+                id="mylo"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <svg class="svg-modalka">
+                <use href="./modal-symbol-defs.svg#icon-email"></use>
+              </svg>
+            </span>
+
+            <label class="text-label" for="comment">Коментар</label>
+            <textarea
+              class="textarea1"
               autocomplete="off"
-              type="tel"
-              id="telef"
-              required
-              pattern="[0-9]{3,}"
-              title="You should write only numbers"
-            />
-            <label class="text-label" for="mylo">Пошта</label>
-            <input
-              class="modal-Input"
-              autocomplete="off"
-              type="email"
-              id="mylo"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required
-            />
+              name=""
+              id="comment"
+              placeholder="Введіть текст"
+              fixed
+            ></textarea>
+            <div class="box-checkbox">
+              <input type="checkbox" id="check" required />
+              <p>
+                Погоджуюся з розсилкою та приймаю
+                <a class="terms" href="rulesForCustomers">Умови договору</a>
+              </p>
+            </div>
+            <!-- не хотів в p текст заходи -->
+            <button class="modalka-submitButton" type="submit">
+              Відправити
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
